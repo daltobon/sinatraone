@@ -1,6 +1,17 @@
 require 'sinatra'
-
-
-get '/' do
-    'Hello world!'
+require 'faker'
+get '/' do  #ruta de about, home,
+  @b = Array.new
+    6.times.each do
+      @b << Faker::DragonBall.character
+    end
+    @c = Array.new
+      6.times.each do
+        @c << Faker::Dune.quote
+      end
+      @b = Array.new
+        6.times.each do
+          @b << Faker::DragonBall.character
+        end
+  erb :index
 end
