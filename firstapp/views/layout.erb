@@ -1,0 +1,26 @@
+<%titulo ="Mi primera aplicación en Sinatra"%>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= titulo %> </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  </head>
+  <body>
+
+    <header class="container">
+      <h1 class="text-center"><em><%= titulo%></em></h1>
+      <nav class="navbar navbar-dark bg-dark">
+      <a href="/">Home</a>
+      <a href="/contact">Contact</a>
+      <a href="/about">About</a>
+    </nav>
+    </header>
+
+      <section>
+        <%= yield %>
+      </section>
+
+  </body>
+</html>
