@@ -10,7 +10,6 @@ end
 
 get '/about' do
     @nosotros = Faker::Name.name
-    binding.pry
     erb :about
 end
 
